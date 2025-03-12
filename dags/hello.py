@@ -8,7 +8,7 @@ with DAG(
     #schedule=timedelta(days=1), # 1일마다 실행
     schedule="0 * * * *",  # 매 분마다 실행행
     #schedule="@hourly",  # 매 시간마다 실행
-    start_date=datetime(2025, 3, 10)
+    start_date=datetime(2025, 3, 11)
  ) as dag:
     
     start = EmptyOperator(task_id="start") 
